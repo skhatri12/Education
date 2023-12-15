@@ -87,7 +87,7 @@
 
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 60px;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
@@ -153,7 +153,6 @@
 }
 
 .banner-description {
-  /* padding: 120px 0px; */
   padding-top: clamp(2rem, 0.0634rem + 8.2629vw, 7.5rem);
   padding-bottom: clamp(2rem, 0.0634rem + 8.2629vw, 7.5rem);
   margin-top: 50px;
@@ -168,9 +167,9 @@
 
 .banner-title p {
   padding-top: 8px;
-  padding-right: 10px;
+  padding-right: 16px;
   padding-bottom: 8px;
-  padding-left: 10px;
+  padding-left: 16px;
   color: #f66112;
   font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
   font-weight: 500;
@@ -178,23 +177,24 @@
   letter-spacing: 0.01em;
 }
 
-.banner-heading {
+.banner-headings {
   margin-top: 20px;
 }
 
 
-.banner-heading strong {
-  font-size: clamp(1rem, 0.4rem + 3vw, 4rem);
+.banner-headings strong {
+  font-size: clamp(2.3125rem, 1.975rem + 1.6875vw, 4rem);
   color: #1C244B;
   font-family: 'Work Sans', sans-serif;
 }
 
-.banner-heading p {
+.banner-headings p {
   margin-top: 5px;
   color: #717171;
   font-size: clamp(0.75rem, 0.68rem + 0.35vw, 1.1rem);
   font-family: 'Poppins', sans-serif;
   font-weight: 400px;
+  max-width: 750px;
 }
 
 .buttons {
@@ -204,12 +204,15 @@
 }
 
 .buttons a button {
-  font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
+  font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
   font-family: 'Poppins', sans-serif;
   outline: none;
   border: none;
   color: white;
-  padding: 11px 27px;
+  padding-top: clamp(0.5rem, 0.3898rem + 0.4702vw, 0.813rem);
+  padding-bottom: clamp(0.5rem, 0.3898rem + 0.4702vw, 0.813rem);
+  padding-left: clamp(1.5rem, 1.3458rem + 0.6580vw, 1.938rem);
+  padding-right: clamp(1.5rem, 1.3458rem + 0.6580vw, 1.938rem);
 }
 
 .buttons a .learn {
@@ -242,8 +245,6 @@
   max-width: 1300px;
   padding-top: clamp(3.25rem, 2.1937rem + 4.5070vw, 6.25rem);
   padding-bottom: clamp(3.25rem, 2.1937rem + 4.5070vw, 6.25rem);
-  /* padding-left: clamp(0.9rem, 0.5567rem + 1.4648vw, 1.875rem);
-  padding-right: clamp(0.9rem, 0.5567rem + 1.4648vw, 1.875rem); */
   padding-left: 30px;
   padding-right: 30px;
   margin: 0 auto;
@@ -274,7 +275,6 @@
 .services-innerwrapper strong {
   color: #1C244B;
   font-size: clamp(1rem, 0.6375rem + 1.8125vw, 2.8125rem);
-  /* margin-top: 9px; */
   font-weight: bold;
   font-family: 'Work Sans', sans-serif;
 }
@@ -298,7 +298,6 @@
 .grid-item img {
   background-color: #fff2ec;
   border-radius: 50%;
-  /* padding: 24px; */
   padding:
     clamp(1rem, 0.8239rem + 0.7512vw, 1.5rem);
 }
@@ -314,7 +313,7 @@
   color: #717171;
   font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
   font-family: 'Poppins', sans-serif;
-
+  max-width: 390px;
 }
 
 /* Ending of services section*/
@@ -330,8 +329,6 @@
   padding: 100px 30px;
   padding-top: clamp(3.25rem, 2.1937rem + 4.5070vw, 6.25rem);
   padding-bottom: clamp(3.25rem, 2.1937rem + 4.5070vw, 6.25rem);
-  /* padding-left: clamp(0.9rem, 0.5567rem + 1.4648vw, 1.875rem);
-  padding-right: clamp(0.9rem, 0.5567rem + 1.4648vw, 1.875rem); */
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -377,7 +374,7 @@
 
 .leftside-content {
   padding: 54px;
-  width: 250px;
+  width: 256px;
 
 }
 
@@ -400,7 +397,7 @@
 
 
 .leftside-heading p {
-  font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+  font-size: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
   line-height: 1.4;
   color: #717171;
   letter-spacing: 0.15px;
@@ -417,8 +414,7 @@
 .cards-one p {
   font-family: 'Poppins', sans-serif;
   color: #717171;
-  font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
-
+  font-size: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
 }
 
 .university-rightside {
@@ -447,10 +443,17 @@
 .textimg {
   position: absolute;
   text-align: center;
-  top: 70%;
+  top: 77%;
   left: 10%;
   font-size: 38px;
   color: #ffffff;
+}
+
+.textimg em {
+  font-size: clamp(1.75rem, 3vw, 2.375rem);
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-weight: 400;
 }
 
 .university-bottomrightside {
@@ -484,12 +487,12 @@
   font-size: clamp(1rem, 0.9560rem + 0.1878vw, 1.125rem);
   border: none;
   color: white;
-  padding-top: clamp(0.5rem, 0.4374rem + 0.3130vw, 0.813rem);
-  padding-bottom: clamp(0.5rem, 0.4374rem + 0.3130vw, 0.813rem);
-  padding-left: clamp(1.5rem, 1.4000rem + 0.5000vw, 2rem);
-  ;
-  padding-right: clamp(1.5rem, 1.4000rem + 0.5000vw, 2rem);
-  margin-top: 10px;
+  padding-top: clamp(0.5rem, 0.3898rem + 0.4702vw, 0.813rem);
+  padding-bottom: clamp(0.5rem, 0.3898rem + 0.4702vw, 0.813rem);
+  padding-left: clamp(1.5rem, 1.3458rem + 0.6580vw, 1.938rem);
+  padding-right: clamp(1.5rem, 1.3458rem + 0.6580vw, 1.938rem);
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
 }
 
 /* ENding of university section */
@@ -497,25 +500,25 @@
 
 /*Starting of blog news section*/
 .bloginner-wrapper {
-  max-width: 1300px;
-  padding: 100px 30px;
+  max-width: 1320px;
   padding-top: clamp(4.5rem, 3.8838rem + 2.6291vw, 6.25rem);
   padding-bottom: clamp(4.5rem, 3.8838rem + 2.6291vw, 6.25rem);
-  padding-left: clamp(1.4rem, 1.2327rem + 0.7136vw, 1.875rem);
-  padding-right: clamp(1.4rem, 1.2327rem + 0.7136vw, 1.875rem);
+  padding-left: 30px;
+  padding-right: 30px;
   display: flex;
   margin: 0 auto;
-  gap: 20px;
+  gap: 50px;
 }
 
 .bloginner-wrapper img {
   object-fit: cover;
+  max-width: 400px;
 }
 
 .news-wrapper {
   display: flex;
-  gap: 15px;
-  margin-top: 15px;
+  gap: 20px;
+  margin-top: 25px;
 }
 
 .news-wrapper p {
@@ -526,6 +529,7 @@
   margin-top: 5px;
   padding-right: 5px;
   padding-bottom: 8px;
+  max-width: 400px;
 }
 
 
@@ -583,7 +587,7 @@ h3 {
 }
 
 .right-events {
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .right-time {
@@ -601,7 +605,7 @@ h3 {
 }
 
 .events {
-  margin-top: 15px;
+  margin-top: 24px;
 }
 
 .time {
@@ -660,7 +664,6 @@ h3 {
 }
 
 .banner-description {
-  /* padding: 120px 0px; */
   padding-top: clamp(2rem, 0.0634rem + 8.2629vw, 7.5rem);
   padding-bottom: clamp(2rem, 0.0634rem + 8.2629vw, 7.5rem);
 }
@@ -669,9 +672,9 @@ h3 {
   padding-top: 8px;
   padding-right: 10px;
   padding-bottom: 8px;
-  /* padding-left: 10px; */
+
   color: #f66112;
-  font-size: clamp(0.875rem, 0.8375rem + 0.1875vw, 1.0625rem);
+  font-size: clamp(1rem, 0.975rem + 0.125vw, 1.125rem);
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.01em;
@@ -683,17 +686,18 @@ h3 {
 
 
 .banner-heading strong {
-  font-size: clamp(1rem, 0.4rem + 3vw, 4rem);
+  font-size: clamp(2.3125rem, 1.975rem + 1.6875vw, 4rem);
   color: #1C244B;
   font-family: 'Work Sans', sans-serif;
 }
 
 .banner-heading p {
-  margin-top: 5px;
+  margin-top: 15px;
   color: #717171;
-  font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+  font-size: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
   font-family: 'Poppins', sans-serif;
   font-weight: 400px;
+  max-width: 566px;
 }
 
 .features {
@@ -721,17 +725,15 @@ h3 {
 }
 
 .buttonss a button {
-  font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
+  font-size: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
   font-family: 'Poppins', sans-serif;
   outline: none;
   border: none;
   color: white;
-  /* padding: 11px 27px; */
-  padding-top: clamp(0.45rem, 0.4024rem + 0.2380vw, 0.688rem);
-  padding-bottom: clamp(0.45rem, 0.4024rem + 0.2380vw, 0.688rem);
-  padding-left: clamp(1.2rem, 1.1024rem + 0.4880vw, 1.688rem);
-  padding-right: clamp(1.2rem, 1.1024rem + 0.4880vw, 1.688rem);
-  ;
+  padding-top: clamp(0.5rem, 0.3898rem + 0.4702vw, 0.813rem);
+  padding-bottom: clamp(0.5rem, 0.3898rem + 0.4702vw, 0.813rem);
+  padding-left: clamp(1.5rem, 1.3458rem + 0.6580vw, 1.938rem);
+  padding-right: clamp(1.5rem, 1.3458rem + 0.6580vw, 1.938rem);
 }
 
 .buttonss a .learn {
@@ -770,26 +772,27 @@ h3 {
 
 .contactsection {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 .contbtn button {
   border: none;
   background-color: #ffffff;
   color: #F66112;
-  /* font-size: 18px; */
-  font-size: (1rem, 0.9560rem + 0.1878vw, 1.125rem);
+  font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
   padding: 14px 32px;
   padding-top: clamp(0.5rem, 0.3680rem + 0.5634vw, 0.875rem);
   padding-bottom: clamp(0.5rem, 0.3680rem + 0.5634vw, 0.875rem);
   padding-left: clamp(1.6rem, 1.4592rem + 0.6009vw, 2rem);
   padding-right: clamp(1.6rem, 1.4592rem + 0.6009vw, 2rem);
   font-weight: bold;
+  font-family: 'Poppins', sans-serif;
 }
 
 .contnum {
-  font-size: (1rem, 0.9560rem + 0.1878vw, 1.125rem);
   color: white;
+  font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+  font-family: 'Poppins', sans-serif;
 }
 
 /**Ending of contact section**/
@@ -809,8 +812,6 @@ h3 {
   padding: 100px 30px;
   padding-top: clamp(4.5rem, 3.8838rem + 2.6291vw, 6.25rem);
   padding-bottom: clamp(4.5rem, 3.8838rem + 2.6291vw, 6.25rem);
-  /* padding-left: clamp(1.4rem, 1.2327rem + 0.7136vw, 1.875rem);
-  padding-right: clamp(1.4rem, 1.2327rem + 0.7136vw, 1.875rem); */
   padding-left: 30px;
   padding-right: 30px;
   gap: 10px;
@@ -902,7 +903,7 @@ h3 {
   text-align: center;
   color: white;
   font-family: 'Work Sans', sans-serif;
-  line-height: 1.25;
+  line-height: 1.4;
   width: 100%;
 }
 
@@ -913,20 +914,24 @@ h3 {
 }
 
 .txtwrapper h3 {
-  font-size: 22px;
+  font-size: clamp(1.25rem, 1.225rem + 0.125vw, 1.375rem);
   letter-spacing: 3px;
   color: #ffffff;
   font-weight: 600;
 }
 
 .txtwrapper h2 {
-  font-size: clamp(2rem, 0.9437rem + 4.5070vw, 5rem);
+  font-size: clamp(2rem, 1.6rem + 2vw, 4rem);
   font-weight: 600;
+  margin-top: 10px;
+  /* max-width: 750px; */
+  line-height: 1.2;
 }
 
 .txtwrapper h5 {
-  font-size: 27px;
+  font-size: clamp(1.375rem, 1.3125rem + 0.3125vw, 1.6875rem);
   font-weight: 400;
+  margin-top: 8px;
 }
 
 .txtwrapper button {
@@ -940,6 +945,7 @@ h3 {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   margin-top: 15px;
+  font-weight: 500;
 }
 
 /**Ending of third banner section**/
@@ -952,8 +958,6 @@ h3 {
   padding: 120px 30px;
   padding-top: clamp(6.5rem, 6.1479rem + 1.5023vw, 7.5rem);
   padding-bottom: clamp(6.5rem, 6.1479rem + 1.5023vw, 7.5rem);
-  /* padding-left: clamp(1rem, 0.6919rem + 1.3146vw, 1.875rem);
-  padding-right: clamp(1rem, 0.6919rem + 1.3146vw, 1.875rem); */
   padding-left: 30px;
   padding-right: 30px;
   justify-content: center;
@@ -1020,7 +1024,6 @@ h3 {
 
 .testimony-statement {
   font-family: 'Work Sans', sans-serif;
-  /* padding: 24px 36px 24px 54px; */
   display: flex;
   gap: 40px;
   padding-top: clamp(0.9rem, 0.6887rem + 0.9014vw, 1.5rem);
@@ -1034,7 +1037,6 @@ h3 {
   line-height: 1.3;
   color: #1C244B;
   font-family: 'Work Sans', sans-serif;
-  /* padding-top: 40px; */
   padding-top: (1rem, 0.4718rem + 2.2535vw, 2.5rem);
 }
 
@@ -1087,8 +1089,6 @@ h3 {
   padding: 64px 48px;
   padding-top: clamp(2rem, 1.2958rem + 3.0047vw, 4rem);
   padding-bottom: clamp(2rem, 1.2958rem + 3.0047vw, 4rem);
-  /* padding-left: clamp(1.5rem, 0.9718rem + 2.2535vw, 3rem);
-  padding-right: clamp(1.5rem, 0.9718rem + 2.2535vw, 3rem); */
   padding-left: 30px;
   padding-right: 30px;
   color: #ffffff;
@@ -1113,21 +1113,21 @@ h3 {
 .footer-aboutsection p {
   font-family: 'Poppins', sans-serif;
   font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
-  margin-top: 32px;
+  margin-top: 10px;
+  max-width: 460px;
 }
 
 .footer-aboutsection button {
-  /* padding: 13px 32px; */
-  padding-top: clamp(0.5rem, 0.4374rem + 0.3130vw, 0.813rem);
-  padding-bottom: clamp(0.5rem, 0.4374rem + 0.3130vw, 0.813rem);
-  padding-left: clamp(1.5rem, 1.4000rem + 0.5000vw, 2rem);
-  padding-right: clamp(1.5rem, 1.4000rem + 0.5000vw, 2rem);
+  padding-top: clamp(0.5rem, 0.3898rem + 0.4702vw, 0.813rem);
+  padding-bottom: clamp(0.5rem, 0.3898rem + 0.4702vw, 0.813rem);
+  padding-left: clamp(1.5rem, 1.3458rem + 0.6580vw, 1.938rem);
+  padding-right: clamp(1.5rem, 1.3458rem + 0.6580vw, 1.938rem);
   border: none;
   margin-top: 20px;
   background-color: #F66112;
   color: white;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 0.75px;
 }
@@ -1167,7 +1167,7 @@ h3 {
   padding: 20px 0px;
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 9px;
   font-family: 'Poppins', sans-serif;
   font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
 }
@@ -1201,6 +1201,10 @@ h3 {
     display: flex;
     flex-direction: column;
   }
+
+  /* .footer-aboutsection p {
+    margin-top: 10px;
+  } */
 
   .textbanner {
     line-height: 1.3;
@@ -1252,11 +1256,6 @@ h3 {
     flex-direction: column;
   }
 
-  .news-wrapper {
-    flex-direction: column;
-    gap: 20px;
-  }
-
   .qcontact-wrapper {
     flex-direction: column;
     gap: 10px;
@@ -1292,9 +1291,19 @@ h3 {
     justify-content: center;
   }
 
+
+
   .testimony-details {
     justify-content: center;
     align-items: center;
+  }
+
+  .left-wrapper {
+    width: 100%;
+  }
+
+  .right-wrapper {
+    width: 100%;
   }
 }
 
@@ -1345,6 +1354,7 @@ h3 {
   .brands-innersection {
     flex-direction: column;
     align-items: center;
+    padding: 20px 30px;
   }
 
   .testimony-statement h2 {
@@ -1353,7 +1363,33 @@ h3 {
 
   .txtwrapper {
     padding: 10px;
-    line-height: 1.2;
+    /* line-height: 1.3; */
+  }
+
+  .bloginner-wrapper {
+    padding: 55px 30px;
+    gap: 40px;
+  }
+
+  .news-wrapper {
+    gap: 30px;
+  }
+
+  .bloginner-wrapper h2 {
+    margin-top: 0px;
+  }
+
+  .programwrapper {
+    padding: 50px 20px;
+    gap: 0px;
+  }
+
+  .program-heading h2 {
+    margin-top: 0px;
+  }
+
+  .testimony-innerwrapper {
+    padding: 50px 30px;
   }
 }
 
@@ -1364,26 +1400,40 @@ h3 {
     grid-template-columns: auto;
   }
 
-  .buttons {
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-item h3 {
+    margin-top: 10px;
+  }
+
+  .grid-item p {
+    text-align: center;
+  }
+
+
+  .news-wrapper {
     flex-direction: column;
   }
 
   .buttonss {
     flex-direction: column;
     gap: 15px;
+    margin-top: 20px;
   }
 
   .testimony-heading h2 {
     align-items: center;
   }
 
-
-  .university-bottom {
-    flex-direction: column;
-  }
-
   .events {
     flex-direction: column;
+    gap: 2px;
+    margin-top: 20px;
   }
 
   .right-time {
@@ -1404,9 +1454,25 @@ h3 {
   }
 
   .features {
-    gap: 8px;
+    /* gap: 8px; */
     display: flex;
     flex-direction: column;
+  }
+
+  .news-wrapper h3 {
+    margin-top: 5px;
+  }
+
+  .news-wrapper p {
+    margin-top: 0px;
+  }
+
+  .left-time img {
+    margin-top: 2px;
+  }
+
+  .time img {
+    margin-top: 2px;
   }
 }
 
@@ -1432,6 +1498,16 @@ h3 {
 
   .university-bottom {
     flex-direction: column;
+    gap: 40px;
+    padding: 31px 31px;
+  }
+
+  .banner-description {
+    margin-top: 0px;
+  }
+
+  .leftside-content {
+    padding: 30px;
   }
 }
 
